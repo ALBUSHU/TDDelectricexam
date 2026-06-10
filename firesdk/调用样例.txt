@@ -1,0 +1,13 @@
+curl -X GET http://127.0.0.1:8080/health
+
+
+
+curl -X POST http://127.0.0.1:8080/api/extract ^
+  -F "req_type=type1" ^
+  -F "images=@C:/Users/86177/Desktop/firesdk/1.jpg" ^
+  -F "images=@C:/Users/86177/Desktop/firesdk/2.jpg" ^
+  -F "images=@C:/Users/86177/Desktop/firesdk/3.jpg" ^
+  -F "images=@C:/Users/86177/Desktop/firesdk/4.jpg"
+  
+curl -X POST http://127.0.0.1:8080/api/extract -F "req_type=type1" -F "images=@C:/Users/86177/Desktop/firesdk/1.jpg" -F "images=@C:/Users/86177/Desktop/firesdk/2.jpg" -F "images=@C:/Users/86177/Desktop/firesdk/3.jpg" -F "images=@C:/Users/86177/Desktop/firesdk/4.jpg"
+  
